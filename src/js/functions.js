@@ -91,7 +91,7 @@ export function themeFunction() {
   }
 
   function themeCheck() {
-    if (dark == "false") {
+    if (dark == "false" || !dark) {
       stylesheet.setAttribute("href", "../assets/css/style.css");
     } else {
       stylesheet.setAttribute("href", "../assets/css/dark-style.css");
