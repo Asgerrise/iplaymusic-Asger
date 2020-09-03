@@ -1,4 +1,4 @@
-import {welcomeThemeFunction} from "../functions.js"
+import {welcomeThemeFunction} from "../js/functions.js"
 welcomeThemeFunction();
 
 const welcome = document.querySelector(".welcome");

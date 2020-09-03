@@ -1,4 +1,4 @@
-import {loginThemeFunction} from "../assets/js/functions.js"
+import {loginThemeFunction} from "../js/functions.js"
 loginThemeFunction();
 
   // FADE IN

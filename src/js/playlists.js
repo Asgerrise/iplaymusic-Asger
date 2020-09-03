@@ -1,8 +1,8 @@
-import {searchBarFunction} from "../assets/js/functions.js"; 
-import {themeFunction} from "../assets/js/functions.js"; 
-import {goBackFunction} from "../assets/js/functions.js"; 
-import {whiteHeaderFunction} from "../assets/js/functions.js"; 
-import {createTracks} from "../assets/js/functions.js"; 
+import {searchBarFunction} from "../js/functions.js"; 
+import {themeFunction} from "../js/functions.js"; 
+import {goBackFunction} from "../js/functions.js"; 
+import {whiteHeaderFunction} from "../js/functions.js"; 
+import {createTracks} from "../js/functions.js"; 
 searchBarFunction();
 themeFunction();
 whiteHeaderFunction();

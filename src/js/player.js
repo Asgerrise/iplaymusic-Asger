@@ -1,6 +1,6 @@
-import {goBackFunction} from "../assets/js/functions.js"; 
-import {whiteHeaderFunction} from "../assets/js/functions.js"; 
-import {convertToMinutes} from "../assets/js/functions.js";
+import {goBackFunction} from "../js/functions.js"; 
+import {whiteHeaderFunction} from "../js/functions.js"; 
+import {convertToMinutes} from "../js/functions.js";
 
 goBackFunction();
 whiteHeaderFunction();
