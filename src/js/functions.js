@@ -109,7 +109,7 @@ export function loginThemeFunction() {
   themeCheck();
 
   function themeCheck() {
-    if (dark == "false") {
+    if (dark == "false" || !dark) {
       stylesheet.setAttribute("href", "../assets/css/style.css");
     } else {
       stylesheet.setAttribute("href", "../assets/css/dark-style.css");
@@ -125,7 +125,7 @@ export function welcomeThemeFunction() {
   themeCheck();
 
   function themeCheck() {
-    if (dark == "false") {
+    if (dark == "false" || !dark) {
       stylesheet.setAttribute("href", "../assets/css/style.css");
     } else {
       stylesheet.setAttribute("href", "../assets/css/dark-style.css");
