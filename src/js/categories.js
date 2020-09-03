@@ -9,14 +9,16 @@ const navIcon = document.querySelector("#categories");
 navIcon.classList.add("linkWIcon__icon_active");
 
 function foldToggle(e) {
-  let content = e.target.nextElementSibling;
-
-  if (content.style.maxHeight) {
-    content.classList.remove("fold-out_active");
-    content.style.maxHeight = null;
-  } else {
-    content.style.maxHeight = content.scrollHeight + 20 + "px";
-    content.classList.add("fold-out_active");
+  if(e.target.classList.contains("btn")){
+    let content = e.target.nextElementSibling;
+  
+    if (content.style.maxHeight) {
+      content.classList.remove("fold-out_active");
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + 20 + "px";
+      content.classList.add("fold-out_active");
+    }
   }
 }
 
