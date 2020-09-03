@@ -1,0 +1,12 @@
+<header class="header">
+    <div class="mask mask_fullSize"></div>
+    <form method="GET" class="search-bar" action="../songs">
+        <input class="search-bar__input" type="search" name="q" id="search-bar" placeholder="Search"> 
+        <input type="submit" class="search-bar__submit_hidden search-bar__submit">
+    </form>
+    <ion-icon class="icon icon_small" name="chevron-back-outline" id="back"></ion-icon>
+    <h2 class="headline headline_small headline_spacing">
+        <%= locals.title %>
+    </h2>
+    <ion-icon class="icon icon_small" id="search" name="search-outline"></ion-icon>
+</header>

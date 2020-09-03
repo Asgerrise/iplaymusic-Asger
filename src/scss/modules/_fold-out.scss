@@ -1,0 +1,27 @@
+.fold-out{
+    overflow:hidden;
+
+    &__subs{
+        padding:0 1em 0 1.4em;
+        box-sizing: border-box;
+        transition: .4s;
+        max-height: 0;
+    }
+    &__sub{
+        text-transform: capitalize;
+        font-size: $small;
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5em 0;
+    }
+    &__icon{
+        fill:black;
+        width:20px;
+        height:20px;
+    }
+    &_active{
+        padding: .4em 1em 1.7em 1.4em;
+    }
+}

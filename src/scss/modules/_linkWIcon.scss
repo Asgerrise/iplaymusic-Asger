@@ -1,0 +1,17 @@
+.linkWIcon{
+    display:flex;
+
+    &__icon{
+        width:30px;
+        height:30px;
+        color: $primary-color;
+        transition: .3s;
+
+        &_white{
+            color: $nav;
+        }
+        &_active{
+            color: $text-theme;
+        }
+    }
+}

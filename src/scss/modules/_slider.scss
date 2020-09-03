@@ -1,0 +1,28 @@
+.slider{
+    overflow-x: scroll;
+    display:grid;
+    scroll-behavior: smooth;
+    gap:1.5em;
+    scrollbar-width: none;
+    padding: .5em 0 1em ;
+
+    &__item{
+        grid-row:1/2;
+        margin-left: 15%;
+        transition: transform .4s;
+        position: relative;
+    }
+    &__img{
+        object-fit: cover;
+        box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3);
+    }
+    &_noGap{
+        gap:1em;
+    }
+    &_marginBot{
+        margin-bottom:1em;
+    }
+    &::-webkit-scrollbar{
+        display:none;
+    }
+}

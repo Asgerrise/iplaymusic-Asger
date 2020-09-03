@@ -1,0 +1,16 @@
+.viewAll{
+    display:flex;
+    justify-content: space-between;
+    font-size:$small;
+    margin-bottom:1.5em;
+
+    &__btn{
+        text-transform: capitalize;
+        cursor:pointer;
+        font-weight: 300;
+        color: $primary-color;
+    }
+    &_margin{
+        margin:0 6.6% 1.5em;
+    }
+}

@@ -1,0 +1,29 @@
+<%- include ("../partials/before-header") %>
+<%- include ("../partials/header", {title: "album"}) %>
+
+<main class="main">
+
+    <img class="backgroundImg backgroundImg_dark backgroundImg_400" src="https://source.unsplash.com/random/300x600" alt="Album Cover">
+
+    <div class="cover">
+        <div class="cover__headline">
+            <h2 class="headline headline_big headline_noMargin cover__headline-text text-darkmode" id="headline">album name</h2>
+            <h2 class="headline headline_small text-darkmode headline_no-transform" id="total_tracks">12 songs</h2>
+        </div>
+
+        <!-- <div class="cover__content">
+            <p class="cover__genres text-darkmode">Genres hashtags</p>
+            <div class="cover__hashtags">
+                <button class="cover__genre">#country</button>
+                <button class="cover__genre">#country road</button>
+            </div>
+        </div> -->
+    </div>
+
+    <h2 class="headline headline_small headline_marginBot">all songs</h2>
+
+</main>
+
+<%- include ("../partials/footer") %>
+<script type="module" src="../assets/js/album.js"></script>
+<%- include ("../partials/after-footer") %>

@@ -1,0 +1,44 @@
+.image-card{
+    overflow:hidden;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.3);
+    margin-bottom: 3em;
+    transition: .5s;
+    position: relative;
+
+    &__img{
+        display:block;
+        grid-area: 1/1/-1/-1;
+        object-fit:cover;
+        width:100%;
+    }
+    &__text{
+        grid-area: 2/1/-1/-1;
+        color:white;
+        position: relative;
+        z-index: 3;
+        padding:10% 25px 0;
+    }
+    &__title{
+        color:white;
+        line-height:1.4;
+        margin-bottom:.5em;
+    }
+    &__small-text{
+        font-size: $tiny;
+        text-transform:capitalize;
+
+    }
+    &::before{
+    content:"";
+    position: absolute;
+        background: $mask;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,25 @@
+.cover {
+    display:grid;
+    height:325px;
+    padding-bottom:2em;
+    margin-bottom: 2em;
+
+    &__content{
+        align-self: end;
+    }
+    &__genres{
+        font-size:$small;
+        margin-bottom: 1em;
+    }
+    &__genre{
+        font-family: 'Poppins', sans-serif;
+        border:none;
+        background-color:$primary-color;
+        border-radius: 25px;
+        padding: .6em .8em;
+        color:white;
+        font-weight: $extra-bold;
+        font-size:$small;
+        margin-right: .2em;
+    }
+}

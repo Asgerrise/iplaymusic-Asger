@@ -1,0 +1,51 @@
+.song-selector{
+    display:grid;
+    grid-template-columns: 10% 70% 8%;
+    column-gap: 1em;    
+    align-items: center;
+    margin-bottom: 1em;
+    justify-content: space-between;
+    transition: .5s;
+
+    &__icon{
+        width:12px;
+        height:12px;
+        color:white;
+    }
+    &__text{
+        text-transform: capitalize;
+    }
+    &__title{
+        font-weight: $semi-bold;
+        font-size: $small;
+        margin-bottom: .1em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__artist{
+        font-size: $tiny;
+        text-overflow: ellipsis;
+    }
+    &__duration{
+        font-weight: $light;
+        font-size: $tiny;
+        white-space: nowrap;
+    }
+    &__img-container{
+        display:flex;
+    }
+    &__img{
+        width:100%;
+        object-fit: cover;
+    }
+    &_wImg{
+        grid-template-columns: 14% 60% 15%;
+    }
+    &_album-tracks{
+        justify-self: end;
+    }
+    .rounded{
+        border-radius: 5px;
+    }
+}

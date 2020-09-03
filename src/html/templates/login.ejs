@@ -1,0 +1,31 @@
+<%- include ("../partials/before-header") %>
+
+<main class="login">
+
+    <h2 class="headline headline_big">log in</h2>
+
+    <form action="../featured" class="login-form">
+        <label for="username" class="login-form__label">username</label>
+        <div class="login-form__input-container">
+            <input type="text" name="username" id="username" class="login-form__input" placeholder="Enter your username">
+            <ion-icon class="login-form__icon" name="person-sharp"></ion-icon>
+        </div>
+        <label for="password" class="login-form__label">password</label>
+        <div class="login-form__input-container">
+            <input type="password" name="password" id="password" class="login-form__input" placeholder="Enter your password">
+            <ion-icon class="login-form__icon" name="key-sharp"></ion-icon>
+        </div>
+        <button class="btn btn_wide btn_border btn_marginTop btn_marginBot" type="submit">log in</button>
+
+        <div class="circle circle_pink circle_wIcon circle_centered">
+            <ion-icon class="circle__icon" name="finger-print-sharp"></ion-icon>
+        </div>
+        <p class="headline headline_light headline_centered headline_marginTop">one-touch login</p>
+        
+    </form>
+
+</main>
+
+<script type="module" src="../assets/js/login.js"></script>
+
+<%- include ("../partials/after-footer") %>

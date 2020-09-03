@@ -1,0 +1,76 @@
+.artistWRings{
+    background-color: $primary-color_opac;
+    border-radius: 50%;
+    width:325px;
+    height:325px;
+    overflow: hidden;
+    display:flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(25vh - 200px);
+    animation-name: pulsate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    &__img{
+        border:1.55em solid $primary-color_opac;
+        border-radius: 50%;
+        object-fit: cover;
+        width:225px;
+        display:block;
+        height:225px;
+        box-sizing: content-box;
+        animation-name: pulsateOuter;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes pulsate{
+    0%{
+        background-color: $primary-color_opac2;
+    }
+    50%{
+        background-color: $primary-color_opac;
+    }
+    100%{
+        background-color: $primary-color_opac2;
+    }
+}
+@keyframes pulsateOuter{
+    20%{
+        border:1.55em solid $primary-color_opac2;
+    }
+    50%{
+        border:1.55em solid $primary-color_opac;
+    }
+    80%{
+        border:1.55em solid $primary-color_opac2;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .artistWRings{
+        width:275px;
+        height:275px;
+
+        &__img{
+            width:200px;
+            height:200px;
+        }
+    }
+}
+@media screen and (max-height: 750px){
+    .artistWRings{
+        width:275px;
+        height:275px;
+
+        &__img{
+            width:200px;
+            height:200px;
+        }
+    }
+}

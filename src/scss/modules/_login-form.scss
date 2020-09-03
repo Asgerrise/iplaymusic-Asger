@@ -1,0 +1,42 @@
+.login-form{
+    display:flex;
+    flex-direction: column;
+    color:$text-theme;
+
+    &__label{
+        font-weight: 600;
+        font-size: $small;
+        text-transform: capitalize;
+        margin-bottom: 1.5em;
+        display:block;
+    }
+    &__input-container{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:.5em 0;
+        margin-bottom: 1.1em;
+        border-bottom:2px solid $text-theme;
+    }
+    &__input{
+        border:none;
+        font-family: 'Poppins', sans-serif;
+        padding: .4em 0;
+        font-size: $small;
+        display:block;
+        width:90%;
+        outline:none;
+        font-weight: 200;
+        background:transparent;
+
+        &::placeholder{
+            opacity: 1;
+            color:$text-theme;
+        }
+    }
+    &__icon{
+        width:25px;
+        height:25px;
+    }
+}

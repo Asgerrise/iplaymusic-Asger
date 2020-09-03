@@ -1,0 +1,39 @@
+<%- include ("../partials/before-header") %>
+<%- include ("../partials/header", {title: "playing"}) %>
+
+<main class="main centered centered_wFlex">
+    <audio src="../assets/media/sample.mp3" id="audio"></audio>
+
+    <img class="backgroundImg backgroundImg_dark backgroundImg_full" src="https://source.unsplash.com/random/800x800" alt="Cover">
+
+    <div class="full-flex">
+        <div class="artistWRings">
+            <img src="https://source.unsplash.com/random/300x800" alt="Artist" class="artistWRings__img">
+        </div>
+
+        <div class="player">
+            <h2 class="headline headline_default headline_noMargin text-darkmode" id="songTitle">Don't call me up</h2>
+            <p class="player__undertitle text-darkmode">mabel</p>
+
+            <input class="player__range" type="range" name="player" id="player" min="0" max="1000" value="0">
+            <div class="player__duration text-darkmode">
+                <p class="player__start">0:00</p>
+                <p class="player__end">4:20</p>
+            </div>
+            <div class="player__controls">
+                <ion-icon class="player__icon" name="play-skip-back-sharp"></ion-icon>
+                <ion-icon class="player__icon" name="play-back-sharp"></ion-icon>
+                <ion-icon class="player__icon player__icon_big" name="play-sharp" id="play"></ion-icon>
+                <ion-icon class="player__icon" name="play-forward-sharp"></ion-icon>
+                <ion-icon class="player__icon" name="play-skip-forward-sharp"></ion-icon>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</main>
+
+<script type="module" src="../assets/js/player.js"></script>
+<%- include ("../partials/after-footer") %>

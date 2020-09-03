@@ -1,0 +1,33 @@
+.circle{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: $gradient-color;
+
+    &__icon{
+        color:white;
+        width:30px;
+        height:30px;
+    }
+    &_pink{
+        background: $primary-color;
+    }
+    &_small{
+        width:30px;
+        height:30px;
+    }
+    &_wIcon{
+        width:75px;
+        height:75px;
+    }
+    &_centered{
+        align-self: center;
+    }
+    &_active{
+        background: $text-theme;
+    }
+
+}
